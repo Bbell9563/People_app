@@ -11,41 +11,43 @@
   </div>
   <div class= "the_form">
     <h1 class="header">Create New Person</h1>
-    <div class="input_boxes">
-      <%= form_for @user do |f|%>
-        <div class="box">
-          <%= f.label :first_name, class: "Label"%>
-          <%= f.text_field :first_name, class: "text_box"%>
-        </div>
-        <div class="box">
-          <%= f.label :last_name, class: "Label"%>
-          <%= f.text_field :last_name, class: "text_box"%>
-        </div>
-        <div class="box">
-          <%= f.label :age, class: "Label"%>
-          <%= f.text_field :age, class: "text_box"%>
-        </div>  
+    <div class= "input_grid">
+      <div class="input_boxes">
+        <%= form_for @user do |f|%>
+          <div class="box">
+            <%= f.label :first_name, class: "Label"%>
+            <%= f.text_field :first_name, class: "text_box"%>
+          </div>
+          <div class="box">
+            <%= f.label :last_name, class: "Label"%>
+            <%= f.text_field :last_name, class: "text_box"%>
+          </div>
+          <div class="box">
+            <%= f.label :age, class: "Label"%>
+            <%= f.text_field :age, class: "text_box"%>
+          </div>  
 
-        <div class="box">
-          <%= f.label :hair_color, class: "Label"%>
-          <%= f.text_field :hair_color, class: "text_box"%>
-        </div>
-        <div class="box">
-          <%= f.label :eye_color, class: "Label"%>
-          <%= f.text_field :eye_color, class:"text_box"%>
-        </div>
-        <div class="box">
-          <%= f.label :gender, class: "Label"%>
-          <%= f.select :gender, options_for_select(['Male', 'Female']), class: "selector"%>
-        </div>
-        <div class="box">
-          <%= f.label :alive ,class: "Label"%>
-          <%= f.select :alive, options_for_select(['true', 'false']), class: "selector"%>
-        </div>
-        <div class="box button">
-          <div class= "submit"><%= f.submit%></div>
-        </div>
-      <% end %>
+          <div class="box">
+            <%= f.label :hair_color, class: "Label"%>
+            <%= f.text_field :hair_color, class: "text_box"%>
+          </div>
+          <div class="box">
+            <%= f.label :eye_color, class: "Label"%>
+            <%= f.text_field :eye_color, class:"text_box"%>
+          </div>
+          <div class="box">
+            <%= f.label :gender, class: "Label"%>
+            <%= f.select :gender, options_for_select(['Male', 'Female']), class: "selector"%>
+          </div>
+          <div class="box">
+            <%= f.label :alive ,class: "Label"%>
+            <%= f.select :alive, options_for_select(['true', 'false']), class: "selector"%>
+          </div>
+          <div class="box button">
+            <div class= "submit"><%= f.submit%></div>
+          </div>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

@@ -12,14 +12,16 @@
   padding: 20px;
   font-size: 40px;
   color:white;
+  margin: 30px;
 
 }
 
 .info{
   width: 50%;
-  margin: 0 25% 30px 25%;
+  margin: 30px 25% 30px 25%;
   background-color: rgba(100,100,100,0.7);
   border-radius: 30px;
+
 }
 .option {
   text-decoration:none;

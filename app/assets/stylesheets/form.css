@@ -12,7 +12,9 @@
   color: #222;
   padding: 0;
 }
-
+.input_grid {
+  display: grid;
+}
 .input_boxes {
   background-color:none ;
   display:flex;
@@ -33,7 +35,8 @@
 
 .text_box {
   width: 280px;
-  margin: 0 0 0 30px;
+  height: 35px;
+  margin: 0px 0 40px 30px;
   border-radius: 5px;
   border:none;
   font-size: 20px;
@@ -41,9 +44,10 @@
 }
 
 .new_user {
-  margin: 30px 0 0 0;
+  margin: 30px 0 30px 0;
   border-radius: 10px;
   background-color: rgba(155,155,155,0.7);
+
 }
 
 #user_alive {
@@ -74,7 +78,7 @@ input[type=submit] {
   border-radius: 30px;
 }
 .edit_user {
-  margin: 30px 0 0 0;
+  margin: 30px 0 30px 0;
   border-radius: 10px;
   background-color: rgba(155,155,155,0.7);
 }
