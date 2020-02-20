@@ -1,0 +1,35 @@
+
+
+
+<div id="show">
+  <%= stylesheet_link_tag "show"%>
+  <div class="menu">
+    <div class= "home item"><%= link_to "Home", users_path, class:"nav_link"%></div>
+    <div>
+      <div class="item"><%= link_to "Create a Person", new_user_path, class: "nav_link"%></div>
+    </div>
+
+  </div>
+  <h1 class= "header_show"><%= @user.full_name %></h1>
+  <div class="info_sheet">
+    <div class= "info">
+      <div class = "single_item"><h2>Age: <%= @user.age %><h2></div>
+      <div class = "single_item"><h2>Hair Color: <%= @user.hair_color.capitalize %><h2></div>
+      <div class = "single_item"><h2>Eye Color: <%= @user.eye_color.capitalize %><h2></div>
+      <div class= "single_item"><h2>Gender: <%= @user.gender %><h2></div>
+      <div class = "single_item">
+        <%if @user.alive == 't' %>
+          <h2> Status: Alive </h2>
+        <% else%>
+          <h2> Status: Deceased</h2>
+        <% end %>
+      </div>
+      <div class= "single_item">
+        <div><%= link_to "Update", edit_user_path(@user), class: "option "%></div>
+        <div><%= link_to "Delete", @user,  method: :delete, class: "option d"%></div>
+
+      </div>
+    
+    </div>
+  </div>
+</div>

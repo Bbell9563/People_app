@@ -1,0 +1,49 @@
+*{
+  margin:0;
+}
+
+#show {
+  background-image: linear-gradient(rgba(193, 66, 66, 0.68), rgba(193, 66, 66, 0.1));
+}
+
+.single_item {
+  display:flex;
+  justify-content:center;
+  padding: 20px;
+  font-size: 40px;
+  color:white;
+
+}
+
+.info{
+  width: 50%;
+  margin: 0 25% 30px 25%;
+  background-color: rgba(100,100,100,0.7);
+  border-radius: 30px;
+}
+.option {
+  text-decoration:none;
+  color: blue;
+  justify-content: space-between;
+  background-color: rgba(255,255,255, 0.8);
+  padding: 10px;
+  margin: 30px;
+  
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px #666;
+}
+
+.d{
+  color:red;
+}
+
+.header_show{
+  font-size: 80px;
+  text-align: center;
+  color: #222;
+  padding: 0;
+}
+
+.info_sheet {
+  display:grid;
+}

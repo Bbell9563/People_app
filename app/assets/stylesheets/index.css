@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+}
+#index {
+  background-image: linear-gradient(rgba(193, 66, 66, 0.68), rgba(193, 66, 66, 0.1));
+}
+.name {
+  font-size: 30px;
+  color: #555;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.one_user {
+  border-radius: 5px;
+  background-color: rgba(100, 100, 100, 0.5) ;
+
+  padding: 30px;
+  margin: 20px;
+
+}
+
+.one_user:hover {
+  transform: scale(1.007, 1.007);
+}
+
+.menu{
+list-style-type:none;
+margin: 0px;
+padding: 0px;
+overflow: hidden;
+display: flex;
+justify-content: space-between;
+
+}
+.nav_link {
+text-decoration: none;
+color: white;
+padding:10px;
+}
+
+.item{
+float: left;
+padding:10px;
+color: white;
+font-size:20px;
+text-decoration: none;
+background-color: #888;
+margin: 40px;
+border-radius: 10px;
+box-shadow: 5px 5px 5px #333;
+}
+
+
+.item:hover{
+background-color: #999;
+color: #555;
+cursor: pointer;
+}
+
+.item:active {
+transform: translateY(1px);
+box-shadow: 4px 4px 4px #333;
+}
+
+.active {
+background-color: red;
+cursor:pointer;
+}
+.active:hover {
+background-color:red;
+color: white;
+}
+.home {
+padding: 20px;
+border-radius: 50px;
+margin: 20px;
+font-size: 30px;
+}
+
+.all_users {
+display:grid;
+grid-template-columns: auto auto auto;
+}
+
+.change {
+text-decoration:none;
+color: blue;
+justify-content: space-between;
+background-color: rgba(255,255,255, 0.8);
+padding: 5px;
+
+border-radius: 3px;
+box-shadow: 3px 3px 3px #666;
+}
+.d{
+color:red;
+}
+
+.grouped {
+display: flex;
+justify-content: space-between;
+margin: 20px 0 0 0;
+}
+.detail {
+color:#777;
+}
+.description {
+background-color: Gainsboro;
+padding: 20px;
+border-radius: 10px;
+}
+
+.group {
+  justify-content: space-around;
+}
+
+h1{
+  text-align: center;
+  font-size: 50px;
+  color: #222;
+}

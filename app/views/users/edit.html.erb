@@ -1,0 +1,51 @@
+<div id=form>
+  <%= stylesheet_link_tag "form"%>
+  
+
+  <div class="menu">
+    <div class= "home item"><%= link_to "Home", users_path, class:"nav_link"%></div>
+    <div>
+      <div class="item"><%= link_to "Create a Person", new_user_path, class: "nav_link"%></div>
+    </div>
+
+  </div>
+  <div class= "the_form">
+    <h1 class="header">Update: <%= @user.full_name%></h1>
+    <div class="input_boxes">
+      <%= form_for @user do |f|%>
+        <div class="box">
+          <%= f.label :first_name, class: "Label"%>
+          <%= f.text_field :first_name, class: "text_box"%>
+        </div>
+        <div class="box">
+          <%= f.label :last_name, class: "Label"%>
+          <%= f.text_field :last_name, class: "text_box"%>
+        </div>
+        <div class="box">
+          <%= f.label :age, class: "Label"%>
+          <%= f.text_field :age, class: "text_box"%>
+        </div>  
+
+        <div class="box">
+          <%= f.label :hair_color, class: "Label"%>
+          <%= f.text_field :hair_color, class: "text_box"%>
+        </div>
+        <div class="box">
+          <%= f.label :eye_color, class: "Label"%>
+          <%= f.text_field :eye_color, class:"text_box"%>
+        </div>
+        <div class="box">
+          <%= f.label :gender, class: "Label"%>
+          <%= f.select :gender, options_for_select(['Male', 'Female']), class: "selector"%>
+        </div>
+        <div class="box">
+          <%= f.label :alive ,class: "Label"%>
+          <%= f.select :alive, options_for_select(['true', 'false']), class: "selector"%>
+        </div>
+        <div class="box button">
+          <%= f.submit%>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
